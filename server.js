@@ -101,18 +101,15 @@ var server = function() {
   self.createRoutes = function() {
     self.routes = {};
 
-
-
-    //not isomorphic
     self.routes['/'] = function(req, res) {
       res.setHeader('Content-Type', 'text/html');
       res.send(self.cache_get('index.html'));
     };
 
     self.routes['/isomorphic'] = function(req, res) {
+      console.log("Fetching isomorphic index page.")
       var reactHtml = ReactDOMServer.renderToString(<App />);
       res.render('index.ejs', {reactOutput: reactHtml});
-      //res.send(reactHtml)
     };
 
 
