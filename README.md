@@ -20,3 +20,5 @@ $ gulp
 
 $ npm start
 ```
+
+In the browser go to "localhost:8080" for non-isomorphic and "localhost:8080/isomorphic" for the isomorphic.
