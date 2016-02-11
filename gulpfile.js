@@ -10,7 +10,7 @@ var htmlreplace = require('gulp-html-replace')
 gulp.task('default', function() {
   return browserify('./source/app.js')
     .transform(babelify, {
-      "plugins": ["transform-react-jsx"]
+      "presets": ["react","es2015"]
     })
     .bundle()
     .pipe(source('client.js'))
