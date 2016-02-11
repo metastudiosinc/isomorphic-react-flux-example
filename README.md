@@ -3,6 +3,7 @@ This is something (or will be something soon) I searched for but could not find 
 
 To use start with:
 
+```
 $ npm install --global babel-cli
 
 $ npm install --global gulp-cli
@@ -16,3 +17,4 @@ $ npm install
 $ gulp
 
 $ npm start
+```
