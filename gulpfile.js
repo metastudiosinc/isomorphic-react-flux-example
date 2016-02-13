@@ -14,5 +14,5 @@ gulp.task('default', function() {
     })
     .bundle()
     .pipe(source('client.js'))
-    .pipe(gulp.dest('./build/'));
+    .pipe(gulp.dest('./public/js/'));
 });

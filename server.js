@@ -25,7 +25,7 @@ var server = function() {
     if (typeof self.ipaddress === "undefined") {
       console.warn('No IP var, using 127.0.0.1');
       self.ipaddress = "127.0.0.1";
-    };
+    }
   };
 
 
@@ -40,7 +40,7 @@ var server = function() {
     }
 
     //  Local cache for static content.
-    self.zcache['index.html'] = fs.readFileSync('./build/index.html');
+    self.zcache['index.html'] = fs.readFileSync('./views/index.html');
     self.zcache['index.ejs'] = fs.readFileSync('./views/index.ejs');
   };
 
